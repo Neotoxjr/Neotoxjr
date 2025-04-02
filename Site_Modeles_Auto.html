@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les Voitures Françaises - Toutes Catégories & Époques</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./CSS/StyleWeb.CSS.css">
+</head>
+<body>
+    <header>
+        <h1>Les Voitures Françaises</h1>
+        <p>Découvrez l'histoire et la diversité des voitures françaises à travers les époques</p>
+    </header>
+
+    <nav>
+        <a href="#course">Course</a>
+        <a href="#daily">Daily</a>
+        <a href="#sportive">Sportive</a>
+        <a href="#rally">Rallye</a>
+        <a href="#classique">Classiques</a>
+        <a href="#luxe">Luxe</a>
+        <a href="#concept">Concept Cars</a>
+        <a href="#utilitaires">Utilitaires</a>
+        <a href="#electriques">Électriques</a>
+        <a href="#hybrides">Hybrides</a>
+        <a href="#militaires">Militaires</a>
+    </nav>
+
+    <section id="course">
+        <h2>Voitures de Course</h2>
+        <h3>Années 1920-1930</h3>
+        <p><span class="car" onclick="showDetails('Bugatti Type 35', 'Moteur: 2.0L 8 cylindres, Puissance: 100 ch, Vitesse max: 190 km/h', 'https://s1.qwant.com/thumbr/474x315/8/0/a4452dc043c80ab7764cedeb29a41e91b6edc2c9bfdef91dc7b138ec318412/th.jpg?u=https%3A%2F%2Ftse.mm.bing.net%2Fth%3Fid%3DOIP.FTZTxrtPFevxaj_ri4gMqAHaE7%26pid%3DApi&q=0&b=1&p=0&a=0')">Bugatti Type 35</span> - Icône des Grand Prix.</p>
+        <p><span class="car" onclick="showDetails('Delage 15 S8', 'Moteur: 1.5L 8 cylindres, Puissance: 170 ch, Vitesse max: 210 km/h', 'https://s1.qwant.com/thumbr/474x316/8/c/8e04eca803c74dcbf1965d785e0ffa4188ef735877411e32a95b0baf42f967/th.jpg?u=https%3A%2F%2Ftse.mm.bing.net%2Fth%3Fid%3DOIP.sA8kvADGb_7SFWSM-CJN-gHaE8%26pid%3DApi&q=0&b=1&p=0&a=0')">Delage 15 S8</span> - Championne de 1927.</p>
+        <h3>Années 1990-2000</h3>
+        <p><span class="car" onclick="showDetails('Peugeot 905', 'Moteur: 3.5L V10, Puissance: 650 ch, Vitesse max: 350 km/h', 'https://s2.qwant.com/thumbr/474x355/4/4/825c0540d203a090d69f7c899dc7528d9a3284612942788ca245a742819eeb/th.jpg?u=https%3A%2F%2Ftse.mm.bing.net%2Fth%3Fid%3DOIP.Y5WZy5Upzy6wfFaByC3FfAHaFj%26pid%3DApi&q=0&b=1&p=0&a=0')">Peugeot 905</span> - Victorieuse au Mans.</p>
+        <p><span class="car" onclick="showDetails('Renault RE40', 'Moteur: 1.5L V6 turbo, Puissance: 650 ch, Vitesse max: 320 km/h', 'https://s2.qwant.com/thumbr/474x355/4/0/24ad0c1884d0dab5d640ad34f8bcc3e784bb666c363bbfc9579e7361c6e1c7/th.jpg?u=https%3A%2F%2Ftse.mm.bing.net%2Fth%3Fid%3DOIP.OZzAjs1GY1gHzkVlmRuf9wHaFj%26pid%3DApi&q=0&b=1&p=0&a=0')">Renault RE40</span> - F1 des années 80.</p>
+        <h3>Années 2000</h3>
+        <p><span class="car" onclick="showDetails('Citroën C4 WRC (version course)', 'Moteur: 2.0L 4 cylindres turbo, Puissance: 320 ch, Vitesse max: 200 km/h', 'https://s2.qwant.com/thumbr/474x355/d/f/23388b12e1ea9527e4fa36c372f7d36525030dcd291db241edcd095fc8cf4e/th.jpg?u=https%3A%2F%2Ftse.mm.bing.net%2Fth%3Fid%3DOIP.jG0pO97d_pjy1OFEdhiFjgHaFj%26pid%3DApi&q=0&b=1&p=0&a=0')">Citroën C4 WRC</span> - Adaptée pour la course.</p>
+        <p><span class="car" onclick="showDetails('Peugeot 908 HDi FAP', 'Moteur: 5.5L V12 diesel, Puissance: 700 ch, Vitesse max: 340 km/h', 'https://s1.qwant.com/thumbr/474x355/8/6/99d41b70935cc2d38f72c890c01da630447c305aafd99ea60fb554059b6f85/th.jpg?u=https%3A%2F%2Ftse.mm.bing.net%2Fth%3Fid%3DOIP.o_opQ9a6b8fkG3UoE7IEYwHaFj%26pid%3DApi&q=0&b=1&p=0&a=0')">Peugeot 908 HDi FAP</span> - Gagnante au Mans 2009.</p>
+    </section>
+
+    <section id="daily">
+        <h2>Voitures du Quotidien</h2>
+        <h3>Années 1950-1960</h3>
+        <p><span class="car" onclick="showDetails('Citroën 2CV', 'Moteur: 0.6L 2 cylindres, Puissance: 29 ch, Vitesse max: 115 km/h', 'https://s1.qwant.com/thumbr/474x322/9/a/6cf9fe4806f59a434b00eb2af67ea6fe16a5a9eb1ef218c83e5bdad53378f5/th.jpg?u=https%3A%2F%2Ftse.mm.bing.net%2Fth%3Fid%3DOIP.l-qCbkwDP692g4o2rPPkHAHaFC%26pid%3DApi&q=0&b=1&p=0&a=0')">Citroën 2CV</span> - La voiture du peuple.</p>
+        <p><span class="car" onclick="showDetails('Renault 4CV', 'Moteur: 0.7L 4 cylindres, Puissance: 21 ch, Vitesse max: 95 km/h', 'https://s1.qwant.com/thumbr/474x338/b/1/76496a979078b70aaeda990d6bf983fa3bab870c3122110c60746e784cbd01/th.jpg?u=https%3A%2F%2Ftse.mm.bing.net%2Fth%3Fid%3DOIP.xUW9fwOoDxpg1FeE72VKVQHaFS%26pid%3DApi&q=0&b=1&p=0&a=0')">Renault 4CV</span> - Post-guerre populaire.</p>
+        <p><span class="car" onclick="showDetails('Peugeot 203', 'Moteur: 1.3L 4 cylindres, Puissance: 45 ch, Vitesse max: 120 km/h', 'https://s1.qwant.com/thumbr/474x315/3/a/8909cfa0837b78f8aff17d739f064a531b4420c997bf7f8ff170735f83d003/th.jpg?u=https%3A%2F%2Ftse.mm.bing.net%2Fth%3Fid%3DOIP.CbJDsAFhCoFwVD02og3x1QHaE7%26pid%3DApi&q=0&b=1&p=0&a=0')">Peugeot 203</span> - Robuste et fiable.</p>
+        <h3>Années 2000-2010</h3>
+        <p><span class="car" onclick="showDetails('Renault Clio', 'Moteur: 1.2L 4 cylindres, Puissance: 75 ch, Vitesse max: 170 km/h', 'https://s1.qwant.com/thumbr/474x316/1/c/ac06d6e8d7f071d515396ee7d0d6ea9111c49dd3c860d5319792e30489b7ee/th.jpg?u=https%3A%2F%2Ftse.mm.bing.net%2Fth%3Fid%3DOIP.FxHZtl-iDmvrEdX8iG73swHaE8%26pid%3DApi&q=0&b=1&p=0&a=0')">Renault Clio</span> - Compacte fiable.</p>
+        <p><span class="car" onclick="showDetails('Peugeot 207', 'Moteur: 1.6L 4 cylindres, Puissance: 120 ch, Vitesse max: 190 km/h', 'https://s1.qwant.com/thumbr/474x315/0/b/352d8732a351f0d40a9a99054bdf080a976791504c91b27850d45d4a632d8d/th.jpg?u=https%3A%2F%2Ftse.mm.bing.net%2Fth%3Fid%3DOIP.wVCT-bd0Wv5ZIawdREFMPAHaE7%26pid%3DApi&q=0&b=1&p=0&a=0')">Peugeot 207</span> - Polyvalente moderne.</p>
+        <p><span class="car" onclick="showDetails('Citroën C3', 'Moteur: 1.4L 4 cylindres, Puissance: 88 ch, Vitesse max: 180 km/h', 'https://s1.qwant.com/thumbr/474x315/8/8/f5beb9c6aacd1d7ecf76289bb64ecfa891ac38dc64c8629e002367cb45dc97/th.jpg?u=https%3A%2F%2Ftse.mm.bing.net%2Fth%3Fid%3DOIP.rqAQvgWsdB6ML2oB7DXwbwHaE7%26pid%3DApi&q=0&b=1&p=0&a=0')">Citroën C3</span> - Citadine populaire.</p>
+        <p><span class="car" onclick="showDetails('Renault Modus', 'Moteur: 1.5L 4 cylindres diesel, Puissance: 86 ch, Vitesse max: 171 km/h', 'https://s1.qwant.com/thumbr/474x355/b/a/755a7bae63645a98efd25ef501d68bea7e83ae641395a4a002153986697cac/th.jpg?u=https%3A%2F%2Ftse.mm.bing.net%2Fth%3Fid%3DOIP.GgXB3pt6dYUDs22fup0PcwHaFj%26pid%3DApi&q=0&b=1&p=0&a=0')">Renault Modus</span> - Petit monospace innovant.</p>
+        <p><span class="car" onclick="showDetails('Peugeot 308', 'Moteur: 1.6L 4 cylindres, Puissance: 120 ch, Vitesse max: 195 km/h', 'https://s1.qwant.com/thumbr/474x355/8/7/1de832fabcd29dcf19bae2392642dbc5f34444b8cbbc6376d23c1bf00773d8/th.jpg?u=https%3A%2F%2Ftse.mm.bing.net%2Fth%3Fid%3DOIP.f3GRpnd7s9HQdtFu8hthvgHaFj%26pid%3DApi&q=0&b=1&p=0&a=0')">Peugeot 308</span> - Compacte élégante.</p>
+    </section>
+
+    <section id="sportive">
+        <h2>Voitures Sportives</h2>
+        <h3>Années 1980</h3>
+        <p><span class="car" onclick="showDetails('Peugeot 205 GTI', 'Moteur: 1.9L 4 cylindres, Puissance: 130 ch, Vitesse max: 205 km/h', 'https://s2.qwant.com/thumbr/474x285/7/e/0a0529a95a58cfe014d1097ef5409e37e9f176ec5b0d8deef2777a7bfcd7ca/th.jpg?u=https%3A%2F%2Ftse.mm.bing.net%2Fth%3Fid%3DOIP.6SN7Mv3gtptjLl_ism4YMwHaEd%26pid%3DApi&q=0&b=1&p=0&a=0')">Peugeot 205 GTI</span> - Hot hatch légendaire.</p>
+        <p><span class="car" onclick="showDetails('Renault 5 Turbo', 'Moteur: 1.4L 4 cylindres turbo, Puissance: 160 ch, Vitesse max: 210 km/h', 'https://s2.qwant.com/thumbr/474x355/4/c/db3de1d62ac1f95c944a13d64c7eecab619b26538bf87a39379435d86b26e4/th.jpg?u=https%3A%2F%2Ftse.mm.bing.net%2Fth%3Fid%3DOIP.juSVKMC-fNyJnXXt7ZQongHaFj%26pid%3DApi&q=0&b=1&p=0&a=0')">Renault 5 Turbo</span> - Petite bombe.</p>
+        <h3>Années 2000</h3>
+        <p><span class="car" onclick="showDetails('Peugeot 206 RC', 'Moteur: 2.0L 4 cylindres, Puissance: 177 ch, Vitesse max: 220 km/h', 'https://s1.qwant.com/thumbr/474x316/a/7/4d6812bc49465103c22a8dc618a935ff2c23d2d16cfd218f980f0ca450a9a7/th.jpg?u=https%3A%2F%2Ftse.mm.bing.net%2Fth%3Fid%3DOIP.Ua6iRJTdOx9zelRVTWnBCAHaE8%26pid%3DApi&q=0&b=1&p=0&a=0')">Peugeot 206 RC</span> - Compacte sportive.</p>
+        <p><span class="car" onclick="showDetails('Renault Clio V6', 'Moteur: 3.0L V6, Puissance: 230 ch, Vitesse max: 235 km/h', 'https://s1.qwant.com/thumbr/474x292/b/b/8c4c9598131207c990ddd557f3aa63845acf2481bf166c4f321964fb8c20bc/th.jpg?u=https%3A%2F%2Ftse.mm.bing.net%2Fth%3Fid%3DOIP.9xnru_RMSMZeNDXapFH64gHaEk%26pid%3DApi&q=0&b=1&p=0&a=0')">Renault Clio V6</span> - Monstre compact.</p>
+        <p><span class="car" onclick="showDetails('Citroën C2 VTS', 'Moteur: 1.6L 4 cylindres, Puissance: 125 ch, Vitesse max: 202 km/h', 'https://s2.qwant.com/thumbr/474x316/6/f/7efa927496d6ce4e318d03a3dfb8c9b86460f080051064499809f8e7531b7a/th.jpg?u=https%3A%2F%2Ftse.mm.bing.net%2Fth%3Fid%3DOIP.2tcEX4ki6P9OOtm5STjKEgHaE8%26pid%3DApi&q=0&b=1&p=0&a=0')">Citroën C2 VTS</span> - Petite sportive agile.</p>
+        <h3>Années 2020</h3>
+        <p><span class="car" onclick="showDetails('Alpine A110', 'Moteur: 1.8L 4 cylindres turbo, Puissance: 252 ch, Vitesse max: 250 km/h', 'https://s2.qwant.com/thumbr/474x266/7/5/3bce9dcee48703dbbafd8603760e1107beccdd859b04e6a2470aa210ad490d/th.jpg?u=https%3A%2F%2Ftse.mm.bing.net%2Fth%3Fid%3DOIP.9NtBMyaMmRh5NXVRawFhhQHaEK%26pid%3DApi&q=0&b=1&p=0&a=0')">Alpine A110</span> - Légende modernisée.</p>
+        <p><span class="car" onclick="showDetails('Peugeot 508 PSE', 'Moteur: 1.6L 4 cylindres hybride, Puissance: 360 ch, Vitesse max: 250 km/h', 'https://s1.qwant.com/thumbr/474x261/1/1/779667819c691754b1ce79327ec0fef1b21ea60aa360120d10ded4d5d2df0e/th.jpg?u=https%3A%2F%2Ftse.mm.bing.net%2Fth%3Fid%3DOIP.W3j2hCI1IvAtqZNGk39vCwHaEF%26pid%3DApi&q=0&b=1&p=0&a=0')">Peugeot 508 PSE</span> - Hybride performante.</p>
+    </section>
+
+    <section id="rally">
+        <h2>Voitures de Rallye</h2>
+        <h3>Années 1970-1980</h3>
+        <p><span class="car" onclick="showDetails('Citroën DS Rallye', 'Moteur: 2.0L 4 cylindres, Puissance: 115 ch, Vitesse max: 170 km/h', 'https://s2.qwant.com/thumbr/474x316/7/a/9bb4d52c4ef0ecfe0c164f24b67af096cc9b02fe87f4566b8c2e507c438b15/th.jpg?u=https%3A%2F%2Ftse.mm.bing.net%2Fth%3Fid%3DOIP.tDwRjuoOLBQvptfUK-XjDgHaE8%26pid%3DApi&q=0&b=1&p=0&a=0')">Citroën DS Rallye</span> - Suspension innovante.</p>
+        <p><span class="car" onclick="showDetails('Peugeot 504 Rallye', 'Moteur: 2.0L 4 cylindres, Puissance: 120 ch, Vitesse max: 180 km/h', 'https://s2.qwant.com/thumbr/474x355/6/7/ef8908744708c9df8ddf2e9a6fa8d888fa493ad8a5e44eed2c8018b10fd37c/th.jpg?u=https%3A%2F%2Ftse.mm.bing.net%2Fth%3Fid%3DOIP.fIWPXHhfXeeCTTO-PXhTZAHaFj%26pid%3DApi&q=0&b=1&p=0&a=0')">Peugeot 504 Rallye</span> - Reine des rallyes africains.</p>
+        <p><span class="car" onclick="showDetails('Renault 17 Gordini Rallye', 'Moteur: 1.6L 4 cylindres, Puissance: 108 ch, Vitesse max: 180 km/h', 'https://s2.qwant.com/thumbr/474x283/6/e/b15edc5a72c4fcf5c07750bc76c1956f63f4ee4c0666f144749e63b5e7bbfe/th.jpg?u=https%3A%2F%2Ftse.mm.bing.net%2Fth%3Fid%3DOIP.tr0UC-deJE206E4VB2yeAAHaEb%26pid%3DApi&q=0&b=1&p=0&a=0')">Renault 17 Gordini Rallye</span> - Compétitrice des années 70.</p>
+        <h3>Années 2000</h3>
+        <p><span class="car" onclick="showDetails('Citroën C4 WRC', 'Moteur: 2.0L 4 cylindres turbo, Puissance: 320 ch, Vitesse max: 200 km/h', 'https://s1.qwant.com/thumbr/474x355/a/9/1e0b525d43078e4c028cf68963e87b0f3aec4f32296a4f7891a0cc975bd1fd/th.jpg?u=https%3A%2F%2Ftse.mm.bing.net%2Fth%3Fid%3DOIP.um5dvsFmo16as8FOXvexkgHaFj%26pid%3DApi&q=0&b=1&p=0&a=0')">Citroën C4 WRC</span> - Dominatrice avec Loeb.</p>
+        <p><span class="car" onclick="showDetails('Peugeot 206 WRC', 'Moteur: 2.0L 4 cylindres turbo, Puissance: 300 ch, Vitesse max: 210 km/h', 'https://s1.qwant.com/thumbr/474x296/b/7/a4abc71c59d87651349bff1a4e710af6e729e974f27e248c16f2f5efb45495/th.jpg?u=https%3A%2F%2Ftse.mm.bing.net%2Fth%3Fid%3DOIP.RZ_3hO-krjA41Z45KCt6TwHaEo%26pid%3DApi&q=0&b=1&p=0&a=0')">Peugeot 206 WRC</span> - Championne du monde 2000-2002.</p>
+        <p><span class="car" onclick="showDetails('Citroën Xsara WRC', 'Moteur: 2.0L 4 cylindres turbo, Puissance: 300 ch, Vitesse max: 210 km/h', 'https://s1.qwant.com/thumbr/474x315/2/1/c6248b000e5f439c3775d5261a2bd234df65fc4ecfd4079f87d9e219d7db77/th.jpg?u=https%3A%2F%2Ftse.mm.bing.net%2Fth%3Fid%3DOIP.YH-POSFHuaI9XVGpwGLrkAHaE7%26pid%3DApi&q=0&b=1&p=0&a=0')">Citroën Xsara WRC</span> - Précurseur de la C4.</p>
+    </section>
+
+    <section id="classique">
+        <h2>Voitures Classiques</h2>
+        <h3>Années 1930</h3>
+        <p><span class="car" onclick="showDetails('Citroën Traction Avant', 'Moteur: 1.9L 4 cylindres, Puissance: 46 ch, Vitesse max: 110 km/h', 'https://s1.qwant.com/thumbr/474x315/9/d/38a9f3d32e3ae4c926f4e9f1b461f484c28f25da226775ee082188d92f3c2c/th.jpg?u=https%3A%2F%2Ftse.mm.bing.net%2Fth%3Fid%3DOIP.fPrW6GawlA5LLuZhXnhK5QHaE7%26pid%3DApi&q=0&b=1&p=0&a=0')">Citroën Traction Avant</span> - Révolutionnaire.</p>
+        <p><span class="car" onclick="showDetails('Peugeot 402', 'Moteur: 2.0L 4 cylindres, Puissance: 55 ch, Vitesse max: 120 km/h', 'https://s2.qwant.com/thumbr/474x287/6/1/ab015ac797065eef96b0c75e4dc8ea868cdd3dbab2e9de2aaa6d6c1193fbef/th.jpg?u=https%3A%2F%2Ftse.mm.bing.net%2Fth%3Fid%3DOIP.i0QbVDR6mCXKqGAlVXgaXQHaEf%26pid%3DApi&q=0&b=1&p=0&a=0.jpg')">Peugeot 402</span> - Design aérodynamique.</p>
+        <h3>Années 1960</h3>
+        <p><span class="car" onclick="showDetails('Peugeot 404', 'Moteur: 1.6L 4 cylindres, Puissance: 72 ch, Vitesse max: 140 km/h', 'https://s2.qwant.com/thumbr/474x296/c/6/b7b3774b9a65751d7c00301f4ea943d7d7c8ad1562cdf5278315a3708965c5/th.jpg?u=https%3A%2F%2Ftse.mm.bing.net%2Fth%3Fid%3DOIP.FCnnvoG6DP1eB1FPAcS8YAHaEo%26pid%3DApi&q=0&b=1&p=0&a=0')">Peugeot 404</span> - Élégance robuste.</p>
+        <p><span class="car" onclick="showDetails('Renault 8 Gordini', 'Moteur: 1.1L 4 cylindres, Puissance: 95 ch, Vitesse max: 170 km/h', 'https://s2.qwant.com/thumbr/474x242/7/c/8d4b2291c6f2376a161421f45aef89e5c39ee86adda9a1c2110cf5243f577e/th.jpg?u=https%3A%2F%2Ftse.mm.bing.net%2Fth%3Fid%3DOIP.i7FLBYK6LmKZnOZY3kaIuwHaDy%26pid%3DApi&q=0&b=1&p=0&a=0')">Renault 8 Gordini</span> - Petite sportive classique.</p>
+        <p><span class="car" onclick="showDetails('Citroën Ami 6', 'Moteur: 0.6L 2 cylindres, Puissance: 22 ch, Vitesse max: 105 km/h', 'https://s2.qwant.com/thumbr/474x355/f/e/1366ecd3849be8c91d58e20d405a858653000d143503ccecf1651c4591261d/th.jpg?u=https%3A%2F%2Ftse.mm.bing.net%2Fth%3Fid%3DOIP.srFagwdHo0TeSpvJ4MxvEgHaFj%26pid%3DApi&q=0&b=1&p=0&a=0')">Citroën Ami 6</span> - Design audacieux.</p>
+        <h3>Années 2000</h3>
+        <p><span class="car" onclick="showDetails('Citroën Xsara Picasso', 'Moteur: 1.6L 4 cylindres, Puissance: 95 ch, Vitesse max: 175 km/h', 'https://s1.qwant.com/thumbr/474x316/b/3/82230184fa3ce92244d3c2ee161a4b4b52b1c40c14c368f4b3e710723ecf0e/th.jpg?u=https%3A%2F%2Ftse.mm.bing.net%2Fth%3Fid%3DOIP.GXIWS7tt6lKwwNBLCQt4nQHaE8%26pid%3DApi&q=0&b=1&p=0&a=0')">Citroën Xsara Picasso</span> - Monospace iconique.</p>
+    </section>
+
+    <section id="luxe">
+        <h2>Voitures de Luxe</h2>
+        <h3>Années 1930</h3>
+        <p><span class="car" onclick="showDetails('Bugatti Royale', 'Moteur: 12.8L 8 cylindres, Puissance: 300 ch, Vitesse max: 200 km/h', 'https://s2.qwant.com/thumbr/474x314/d/b/5fcb63ceb762fe6ea948967d2265853e7e9e1ef9ec5a045994a01643875e9e/th.jpg?u=https%3A%2F%2Ftse.mm.bing.net%2Fth%3Fid%3DOIP.NTGo2ksx-lcV-8gIQ__x2gHaE6%26pid%3DApi&q=0&b=1&p=0&a=0')">Bugatti Royale</span> - Symbole d’opulence.</p>
+        <h3>Années 2000</h3>
+        <p><span class="car" onclick="showDetails('Bugatti Veyron', 'Moteur: 8.0L W16 quad-turbo, Puissance: 1001 ch, Vitesse max: 407 km/h', 'https://s2.qwant.com/thumbr/474x355/f/a/08d0c64da7870426069d9ed03b24e6cb9f768e595cfb97e78b02bc485fb568/th.jpg?u=https%3A%2F%2Ftse.mm.bing.net%2Fth%3Fid%3DOIP.LjcuKsqERRDroSTVkVcfsAHaFj%26pid%3DApi&q=0&b=1&p=0&a=0')">Bugatti Veyron</span> - Hypercar révolutionnaire.</p>
+        <p><span class="car" onclick="showDetails('Citroën C6', 'Moteur: 3.0L V6, Puissance: 211 ch, Vitesse max: 230 km/h', 'https://s1.qwant.com/thumbr/474x315/0/a/08c5825c01bbc7c2a83949e8379c39b98a6c57e0e60067537a123663a35c43/th.jpg?u=https%3A%2F%2Ftse.mm.bing.net%2Fth%3Fid%3DOIP.blnbSr-k5-B63kcAAM1hIwHaE7%26pid%3DApi&q=0&b=1&p=0&a=0')">Citroën C6</span> - Berline de luxe moderne.</p>
+        <h3>Années 2020</h3>
+        <p><span class="car" onclick="showDetails('DS 9', 'Moteur: 1.6L 4 cylindres hybride, Puissance: 225 ch, Vitesse max: 240 km/h', 'https://s2.qwant.com/thumbr/474x266/f/7/32d041e3526d25f96e40b0a4a180629f81191790ef1bf0b6b422552489079e/th.jpg?u=https%3A%2F%2Ftse.mm.bing.net%2Fth%3Fid%3DOIP.XrLw0wtks-ml3Kh9Tq4vNAHaEK%26pid%3DApi&q=0&b=1&p=0&a=0')">DS 9</span> - Élégance contemporaine.</p>
+    </section>
+
+    <section id="concept">
+        <h2>Concept Cars</h2>
+        <h3>Années 2000</h3>
+        <p><span class="car" onclick="showDetails('Peugeot 907', 'Moteur: 6.0L V12, Puissance: 500 ch, Vitesse max: 300 km/h (estimée)', 'https://s2.qwant.com/thumbr/474x355/c/5/f838125beb37e84757997a0430ac27e94b49ffedc8d527072356c8f3cb2de0/th.jpg?u=https%3A%2F%2Ftse.mm.bing.net%2Fth%3Fid%3DOIP.vkjkNJHP47g54bbDT219PAHaFj%26pid%3DApi&q=0&b=1&p=0&a=0')">Peugeot 907</span> - Vision futuriste.</p>
+        <p><span class="car" onclick="showDetails('Renault DeZir', 'Moteur: Électrique, Puissance: 150 ch, Vitesse max: 180 km/h', 'https://s1.qwant.com/thumbr/474x296/1/4/ac98ebc333a32d237668d92f2135a2c3605d4ea5b5a752957fcfe2e2fd1ac4/th.jpg?u=https%3A%2F%2Ftse.mm.bing.net%2Fth%3Fid%3DOIP.fGlwmQ9KSGHWYTqP_w2IDAHaEo%26pid%3DApi&q=0&b=1&p=0&a=0')">Renault DeZir</span> - Électrique sensuel.</p>
+        <p><span class="car" onclick="showDetails('Citroën C-Métisse', 'Moteur: Hybride diesel, Puissance: 400 ch, Vitesse max: 250 km/h', 'https://s2.qwant.com/thumbr/474x315/c/e/76826c6f77c3e2a13f264daf67d14ac89f9451ce796b423f7748e72f0ee84d/th.jpg?u=https%3A%2F%2Ftse.mm.bing.net%2Fth%3Fid%3DOIP.X48sqEpL_KkR-NmtAPOAdwHaE7%26pid%3DApi&q=0&b=1&p=0&a=0')">Citroën C-Métisse</span> - Design audacieux.</p>
+    </section>
+
+    <section id="utilitaires">
+        <h2>Voitures Utilitaires</h2>
+        <h3>Années 1950-1960</h3>
+        <p><span class="car" onclick="showDetails('Citroën Type H', 'Moteur: 1.9L 4 cylindres, Puissance: 52 ch, Vitesse max: 100 km/h', 'https://s1.qwant.com/thumbr/474x316/a/e/26f0865be7fc0e884ec211fb38ef7f5c1025782df6b12c849829711081101a/th.jpg?u=https%3A%2F%2Ftse.mm.bing.net%2Fth%3Fid%3DOIP.zCxs810dMKKnqqcBf9BIVgHaE8%26pid%3DApi&q=0&b=1&p=0&a=0')">Citroën Type H</span> - Fourgon légendaire.</p>
+        <h3>Années 2000</h3>
+        <p><span class="car" onclick="showDetails('Renault Kangoo', 'Moteur: 1.5L 4 cylindres diesel, Puissance: 90 ch, Vitesse max: 170 km/h', 'https://s2.qwant.com/thumbr/474x307/7/5/e3c9bf1c8fe00d5026c88d738aee397a53674fe6af21623ef3a7acb6de6f9d/th.jpg?u=https%3A%2F%2Ftse.mm.bing.net%2Fth%3Fid%3DOIP.H25QyZp03cjK5UMUp3sYJAHaEz%26pid%3DApi&q=0&b=1&p=0&a=0')">Renault Kangoo</span> - Utilitaire polyvalent.</p>
+        <p><span class="car" onclick="showDetails('Peugeot Partner', 'Moteur: 1.6L 4 cylindres, Puissance: 90 ch, Vitesse max: 160 km/h', 'https://s1.qwant.com/thumbr/474x266/0/c/27b16344c22ee61785ba9fc591822ea034592ef91d3e674031a220ce69f440/th.jpg?u=https%3A%2F%2Ftse.mm.bing.net%2Fth%3Fid%3DOIP.MV_UN0w3egcSNEJuwOs0ngHaEK%26pid%3DApi&q=0&b=1&p=0&a=0')">Peugeot Partner</span> - Compagnon des pros.</p>
+    </section>
+
+    <section id="electriques">
+        <h2>Voitures Électriques</h2>
+        <h3>Années 2010</h3>
+        <p><span class="car" onclick="showDetails('Renault Zoe', 'Moteur: Électrique, Puissance: 135 ch, Vitesse max: 140 km/h', 'https://s2.qwant.com/thumbr/474x262/c/e/343a26680d1cb51ad714ef382b6e139f6d823ffff79660d7dd50f895cb6b94/th.jpg?u=https%3A%2F%2Ftse.mm.bing.net%2Fth%3Fid%3DOIP.o1XXGGV9nspUqJneHHdYfwHaEG%26pid%3DApi&q=0&b=1&p=0&a=0')">Renault Zoe</span> - Citadine électrique populaire.</p>
+        <p><span class="car" onclick="showDetails('Peugeot iOn', 'Moteur: Électrique, Puissance: 67 ch, Vitesse max: 130 km/h', 'https://s1.qwant.com/thumbr/474x316/3/6/110ef491fdb293985dbce68f46b401584bd27454155b35c096cffd32f74c46/th.jpg?u=https%3A%2F%2Ftse.mm.bing.net%2Fth%3Fid%3DOIP.bH_5LjDb3lfQgikcbNz56QHaE8%26pid%3DApi&q=0&b=1&p=0&a=0')">Peugeot iOn</span> - Compacte écologique.</p>
+        <h3>Années 2020</h3>
+        <p><span class="car" onclick="showDetails('Citroën Ami', 'Moteur: Électrique, Puissance: 8 ch, Vitesse max: 45 km/h', 'https://s2.qwant.com/thumbr/474x266/5/0/6bb8f4add2af86a6b7a3be9c0a1536e50699933eb7a7e75925cd8527393344/th.jpg?u=https%3A%2F%2Ftse.mm.bing.net%2Fth%3Fid%3DOIP.P-oEFHOmKtdCKq2JK2T3HgHaEK%26pid%3DApi&q=0&b=1&p=0&a=0')">Citroën Ami</span> - Micro-mobilité urbaine.</p>
+        <p><span class="car" onclick="showDetails('Peugeot e-208', 'Moteur: Électrique, Puissance: 136 ch, Vitesse max: 150 km/h', 'https://s2.qwant.com/thumbr/474x316/6/a/bbd03b16f953a8d3c3cab007e4d0581d84bd2623568be58f5336130745eca7/th.jpg?u=https%3A%2F%2Ftse.mm.bing.net%2Fth%3Fid%3DOIP.hr4YD_c3oOlI5vTZ8ZFUiQHaE8%26pid%3DApi&q=0&b=1&p=0&a=0')">Peugeot e-208</span> - Compacte électrique moderne.</p>
+        <p><span class="car" onclick="showDetails('Renault Megane E-Tech', 'Moteur: Électrique, Puissance: 220 ch, Vitesse max: 160 km/h', 'https://s1.qwant.com/thumbr/474x355/9/5/38fbd1bd156f82767c4b90f3133047575e791046e00450c882b7ed86a1f372/th.jpg?u=https%3A%2F%2Ftse.mm.bing.net%2Fth%3Fid%3DOIP.NiCA3PkGzR-Pcw39goDodwHaFj%26pid%3DApi&q=0&b=1&p=0&a=0')">Renault Megane E-Tech</span> - Électrique polyvalente.</p>
+    </section>
+
+    <section id="hybrides">
+        <h2>Voitures Hybrides</h2>
+        <h3>Années 2000</h3>
+        <p><span class="car" onclick="showDetails('Citroën C5 Hybrid', 'Moteur: 2.0L 4 cylindres + électrique, Puissance: 200 ch, Vitesse max: 210 km/h', 'https://s1.qwant.com/thumbr/474x303/b/3/1973906b6b6fd0f7b463deaa6bdcd7971d1af736306b75afff8e04a187ac4d/th.jpg?u=https%3A%2F%2Ftse.mm.bing.net%2Fth%3Fid%3DOIP.w4-NNvSQIkanrUCm2hC-vwHaEv%26pid%3DApi&q=0&b=1&p=0&a=0')">Citroën C5 Hybrid</span> - Berline éco-performante.</p>
+        <h3>Années 2020</h3>
+        <p><span class="car" onclick="showDetails('Peugeot 3008 Hybrid', 'Moteur: 1.6L 4 cylindres + électrique, Puissance: 300 ch, Vitesse max: 235 km/h', 'https://s2.qwant.com/thumbr/474x266/f/e/2a105b0acb309d7e60515d0d8369d184b531584d376cde241edb12688de618/th.jpg?u=https%3A%2F%2Ftse.mm.bing.net%2Fth%3Fid%3DOIP.FBuAYvJ_KurdwU7ORojGggHaEK%26pid%3DApi&q=0&b=1&p=0&a=0')">Peugeot 3008 Hybrid</span> - SUV hybride puissant.</p>
+        <p><span class="car" onclick="showDetails('Renault Captur E-Tech', 'Moteur: 1.6L 4 cylindres + électrique, Puissance: 160 ch, Vitesse max: 170 km/h', 'https://s2.qwant.com/thumbr/474x315/d/8/90c4887b53e0bbe9cd1fc3a380f6e065a9cb6e6ddd654b328a32e92d9f2d8c/th.jpg?u=https%3A%2F%2Ftse.mm.bing.net%2Fth%3Fid%3DOIP.M_N4xmGyLJE7eMVsGsFbIgHaE7%26pid%3DApi&q=0&b=1&p=0&a=0')">Renault Captur E-Tech</span> - Crossover hybride.</p>
+        <p><span class="car" onclick="showDetails('DS 7 Crossback E-Tense', 'Moteur: 1.6L 4 cylindres + électrique, Puissance: 300 ch, Vitesse max: 235 km/h', 'https://s2.qwant.com/thumbr/474x266/7/2/a5db0a9b4728526e731dc706545837d3ce197a607ff578ef45c11f9d3321c9/th.jpg?u=https%3A%2F%2Ftse.mm.bing.net%2Fth%3Fid%3DOIP.5Ig7c_Vnb0_QMHX6ZqlgpwHaEK%26pid%3DApi&q=0&b=1&p=0&a=0')">DS 7 Crossback E-Tense</span> - Luxe hybride.</p>
+    </section>
+
+    <section id="militaires">
+        <h2>Véhicules Militaires</h2>
+        <h3>Années 1950-1960</h3>
+        <p><span class="car" onclick="showDetails('Hotchkiss M201', 'Moteur: 2.0L 4 cylindres, Puissance: 52 ch, Vitesse max: 100 km/h', 'https://s1.qwant.com/thumbr/474x355/1/3/f10e7e3e5cf4eea625fc686fe4e651cc115d2e02ddbcef392cd03190c29a3c/th.jpg?u=https%3A%2F%2Ftse.mm.bing.net%2Fth%3Fid%3DOIP.DeWTf6WkjghqPSDpDqWmMQHaFj%26pid%3DApi&q=0&b=1&p=0&a=0')">Hotchkiss M201</span> - Jeep française.</p>
+        <h3>Années 2000-2020</h3>
+        <p><span class="car" onclick="showDetails('Panhard VBL', 'Moteur: 2.1L 4 cylindres diesel, Puissance: 95 ch, Vitesse max: 95 km/h', 'https://s2.qwant.com/thumbr/474x315/4/0/eb2039f757ac27ad56a809c51cf60b64c29b796a1ad836276cc432f7139845/th.jpg?u=https%3A%2F%2Ftse.mm.bing.net%2Fth%3Fid%3DOIP.734-Ej9bCRSWCtykwFn75wHaE7%26pid%3DApi&q=0&b=1&p=0&a=0')">Panhard VBL</span> - Véhicule blindé léger.</p>
+        <p><span class="car" onclick="showDetails('Arquus Sherpa', 'Moteur: 4.8L 4 cylindres diesel, Puissance: 215 ch, Vitesse max: 120 km/h', 'https://s2.qwant.com/thumbr/474x316/f/7/0b4c653676b524aa1e183baed0a654825ae53a93bc6b29bac80fc4e6a9d3ab/th.jpg?u=https%3A%2F%2Ftse.mm.bing.net%2Fth%3Fid%3DOIP.2kc65L8aGNoNeaaOo71lJwHaE8%26pid%3DApi&q=0&b=1&p=0&a=0')">Arquus Sherpa</span> - Transport tactique.</p>
+        <p><span class="car" onclick="showDetails('Griffon VBMR', 'Moteur: 9.3L 6 cylindres diesel, Puissance: 400 ch, Vitesse max: 110 km/h', 'https://s2.qwant.com/thumbr/474x315/7/9/96fc8d7895b568234119f2b20b16471df6300aa3ed4b5f1eec7716bb3992fd/th.jpg?u=https%3A%2F%2Ftse.mm.bing.net%2Fth%3Fid%3DOIP.js-fNiWbjh5nBle0fSCryQHaE7%26pid%3DApi&q=0&b=1&p=0&a=0')">Griffon VBMR</span> - Véhicule multi-rôles moderne.</p>
+        <p><span class="car" onclick="showDetails('Jaguar EBRC', 'Moteur: 9.3L 6 cylindres diesel, Puissance: 500 ch, Vitesse max: 120 km/h', 'https://s2.qwant.com/thumbr/474x316/d/9/48a71890bca867a8cf49758c72f3a59e9801a6fd051777aaee2a164058ffb9/th.jpg?u=https%3A%2F%2Ftse.mm.bing.net%2Fth%3Fid%3DOIP.L15yNnDPEw5aZrjq0UQoYgHaE8%26pid%3DApi&q=0&b=1&p=0&a=0')">Jaguar EBRC</span> - Reconnaissance et combat.</p>
+    </section>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="hideDetails()">×</span>
+            <h3 id="car-name"></h3>
+            <img id="car-image" class="car-image" src="" alt="Image de la voiture">
+            <p id="car-details"></p>
+        </div>
+    </div>
+<a href="Site_Histoire_France_Auto.html" style="color: #ffffff; text-decoration: none; transition: color 0.3s;">>Découvrez l'hisoire automobile de la France</a>
+    <footer>
+        <p>© 2025 - Les Voitures Françaises - Tous droits réservés</p>
+    </footer>
+	<script src="Js/javascript.js"></script>
+</body>
+</html>
