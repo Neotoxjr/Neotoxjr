@@ -1,4 +1,4 @@
-/* Global styles */
+/* Reset and global styles */
 * {
     margin: 0;
     padding: 0;
@@ -6,86 +6,184 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     background-color: #ffffff; /* Blanc */
-    color: #333333;
+    color: #333;
     line-height: 1.6;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #0052A5, #ff0000); /* Dégradé bleu-rouge */
+    display: flex;
+    flex-direction: column;
 }
 
 /* Header styles */
 header {
-    background-color: #0052A5; /* Bleu */
-    color: #ffffff; /* Blanc */
-    padding: 20px;
+    background: linear-gradient(135deg, #003b8f, #ff0000); /* Dégradé bleu foncé - rouge */
+    color: #ffffff;
+    padding: 20px 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 100;
 }
 
 header .logo h1 {
-    font-size: 24px;
-    font-weight: bold;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 2px;
 }
 
 nav ul {
     list-style-type: none;
     display: flex;
+    gap: 30px;
 }
 
 nav ul li {
-    margin-left: 20px;
+    font-size: 18px;
 }
 
 nav ul li a {
     text-decoration: none;
-    color: #ffffff;
-    font-size: 18px;
+    color: #fff;
+    position: relative;
+    padding: 5px 0;
 }
 
-nav ul li a:hover {
-    color: #ff0000; /* Rouge */
+nav ul li a::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    left: 0;
+    bottom: -2px;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out;
 }
 
-/* Hero Section */
+nav ul li a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+/* Hero section with dynamic background */
 .hero {
-    background-color: #ff0000; /* Rouge */
-    color: #ffffff; /* Blanc */
-    padding: 50px 20px;
+    background: linear-gradient(135deg, rgba(0, 82, 165, 0.8), rgba(255, 0, 0, 0.8)), url('https://source.unsplash.com/random/1600x900');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 120px 20px;
     text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
 }
 
 .hero h2 {
-    font-size: 36px;
+    font-size: 48px;
+    font-weight: 900;
     margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    animation: slideUp 1s ease-out;
 }
 
 .hero p {
     font-size: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+    animation: fadeIn 2s ease-out;
 }
 
 .hero button {
     background-color: #0052A5; /* Bleu */
     color: #ffffff;
     border: none;
-    padding: 10px 20px;
+    padding: 15px 30px;
     font-size: 18px;
+    border-radius: 5px;
     cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 .hero button:hover {
     background-color: #003b8f; /* Bleu foncé */
+    transform: translateY(-5px);
 }
 
 /* Footer styles */
 footer {
-    background-color: #f1f1f1;
-    color: #333333;
+    background-color: #222222;
+    color: #ccc;
     text-align: center;
     padding: 20px;
-    margin-top: 50px;
+    position: relative;
+    margin-top: auto;
+    font-size: 14px;
 }
 
 footer p {
-    font-size: 14px;
+    font-size: 16px;
+    color: #bbb;
+    text-transform: uppercase;
+}
+
+/* Animations */
+@keyframes slideUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .hero h2 {
+        font-size: 36px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    .hero button {
+        font-size: 16px;
+    }
 }
